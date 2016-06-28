@@ -8,6 +8,7 @@ body {
     min-width: 960px;
     max-width: 2048px;
     box-shadow: 3px 3px 3px #333333;
+   
 
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -17,11 +18,10 @@ header{
     height: 60px; padding-top: 15px;
 }
 
-
 h1 {
     margin-top: 0px;
     font-family: Georgia, "Times New Roman", serif;
-    background-color: #191970;
+    
     color: #E6E6FA;
 }
 
@@ -36,27 +36,34 @@ H3  {
 }
 
 nav {
-    text-align: center;
+    text-align: left;
     font-weight: bold;
     background-color: #ffffff;
-    padding: 10px 10px;
+    padding: 0px 0px;
+    float: left;
+    width: 160px;
      
 }
-
+nav ul { 
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
 nav a {
     text-decoration: none; 
-
 }
 header {
     background-image: url(sunset.jpg);
     background-repeat: no-repeat;
     background-position: right;
     line-height: 0%;
-    text-indent: 1em;}
+    text-indent: 1em;
+    background-color: #000033;
+}
 footer  {
     font-size: .75em
 }
-ul {
+main ul {
     list-style-image: url(marker.gif)
 
 }   
@@ -79,13 +86,11 @@ main{
     padding-right: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
-    
 }
 
 footer{
     padding: 20px;
     
-
 }
 
 
