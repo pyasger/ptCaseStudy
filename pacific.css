@@ -10,17 +10,20 @@ header {
 }
 
 body {
-    background-image: linear-gradient(to bottom, #FFFFFF, #4f6d93);
+    
     background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #FFFFFF, #4f6d93);
     color: #666666;
     font-family: Arial, Helvetica, sans-serif;
+
 }
 
 nav {
     font-weight: bold;
     padding: 20px;
     float: left;
-    width: 160px;
+    width: 190px;
+    padding-left: 30px;
 }
 
 main {
@@ -29,7 +32,10 @@ main {
     padding-bottom: 20px;
     padding-left: 30px;
     background: #FFFFFF;
-    margin-left: 190px;
+    margin-left: 165px;
+}
+figure { float: none;
+        width: 100%
 }
 
 h2 {
@@ -45,6 +51,21 @@ nav a {
     text-decoration: none;
 }
 
+form{
+    background-color: #eaeaea;
+    font-family: Arial, sans-serif;
+    width: 350px; padding: 10px;}
+label{
+    float: left; clear: left;
+    display: block; width: 100px;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+input, textarea{margin-top: 10px;
+display: block;}
+input[type="submit"] {margin-left: 110px;}
 h1 {
     margin-top: 0;
     font-family: Georgia, Times New Roman, serif;
@@ -64,8 +85,9 @@ footer {
     font-style: italic;
     font-family: Georgia, Times New Roman, serif;
     padding: 20px;
-    margin-left: 190px;
+    margin-left: 165px;
     background: #FFFFFF;
+    text-align: center;
 }
 
 table {
@@ -74,7 +96,7 @@ table {
     border-spacing: 0;
 }
 
-td th {
+td, th {
     padding: 5px;
     border: 1px solid #3399cc;
 }
@@ -90,7 +112,7 @@ th {
 
 #wrapper {
     margin: auto;
-    background-color: #90c7e3;
+    background-color: #FFFFFF;
     width: 80%;
     min-width: 960px;
     max-width: 2048px;
@@ -125,7 +147,10 @@ ul {
     font-size: 1.2em;
     text-decoration: none;
 }
-
+nav ul { list-style-type: none; 
+        margin: 0;
+        padding: 0;
+}
 nav a:link {
     color: #000033;
 }
@@ -139,6 +164,10 @@ nav a:hover {
 }
 
 @media only screen and (max-width: 64em) {
+    img{
+        max-width: 100%;
+        
+    }
     #wrapper {
         min-width: 0;
         width: auto;
@@ -147,16 +176,29 @@ nav a:hover {
     main {
         margin-left: 0;
     }
-    nav {
+    figure{
+     display: none;
+    }
+    
+    nav{
+        float: none;
+        width: auto;
+        text-align: center;  
+    }
+    
+    nav li{
         float: none;
         width: auto;
         text-align: center;
         padding: 0.5em;
+        display: inline;
+        
     }
     ul {
+        
         padding-top: 0.25em;
         padding-bottom: 0.25em;
-        padding-left: 0.75em;
+        padding-left: 6em;
         padding-right: 0.75em;
     }
     homehero {
@@ -177,6 +219,7 @@ nav a:hover {
     header {
         padding-top: 1em;
     }
+    figure{ display: none;}
     main {
         padding-top: 0.1em;
         padding-bottom: 0.1em;
@@ -184,19 +227,43 @@ nav a:hover {
         padding-right: 1em;
         font-size: 90%;
     }
-    h1 {
-        font-size: 1.5em;
+    img{
+        max-width: 100%;
+        height: auto;
+        
     }
-    nav {
-        padding: 0;
+    figure { display: none; }
+    h1, h2 {
+            font-size: 100%; }
+    span { font-size: 80%; }
+    nav, nav ul, nav li { padding: 0; }
+    nav li {display: block; }
+    nav a { display: block;
+            padding: 0.5em 0;
+        border-bottom: 2px ridge #330000;
     }
-    ul {
-        margin: 0;
-        border-bottom: 2px #330000;
-    }
-    nav {
+    nav li {
         display: block;
     }
+}
+homehero, yurthero, trailhero{
+    
+    background-image: none;
+    height: 0;
+    
+}
+label{
+    float: left;
+    display: block;
+    text-align: right;
+    width: 120px;
+     
+}
+input{
+    
+    display: block;
+    margin: 20px;
+    
 }
 
 header,
