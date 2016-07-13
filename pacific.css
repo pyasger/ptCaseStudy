@@ -48,6 +48,11 @@ video {
     max-width: 320px;
 }
 
+video, embed {
+    float:right;
+    padding-left: 20px;
+}
+
 .resort {
     color: #5c7fa3;
     font-weight: bold;
@@ -182,9 +187,43 @@ nav a:visited {
 }
 
 nav a:hover {
-    color: #ffffff;
+    color: #FFFFFF;
     transition: 3s ease-out;
 }
+
+#gallery { position: relative; }
+#gallery ul {list-style-type: none;
+    width: 300px; 
+}
+#gallery li { display: inline; 
+     float: left;
+	 padding: 10px; 
+}
+#gallery img { border-style: none;
+}
+#gallery a { text-decoration: none;
+             font-style: italic;  
+             color: #eaeaea; 
+}
+#gallery span { position: absolute;
+                left: -1000px;
+               opacity: 0;
+              transition:  opacity 3s ease-in-out; 
+}
+#gallery a:hover span {  
+            display: block;
+			position: absolute;
+			top: 16px;
+			left: 320px; 
+			text-align: center; 
+            opacity: 1; 
+}
+figure {    position: absolute;
+			left: 280px; 
+			text-align: center; 
+            opacity: .25;
+}
+
 
 @media only screen and (max-width: 64em) {
     img {
