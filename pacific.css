@@ -318,6 +318,10 @@ figure {
     figure {
         display: none;
     }
+    video{
+        display: none;
+    
+    }
     h1,
     h2 {
         font-size: 100%;
@@ -342,9 +346,9 @@ figure {
         display: block;
     }
 }
-
+yurthero{ display: none; }
 homehero,
-yurthero,
+
 trailhero {
     background-image: none;
     height: 0;
